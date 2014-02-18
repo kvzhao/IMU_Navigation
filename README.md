@@ -1,5 +1,5 @@
 # Arduino IMU - Navigation
-    A Lab for processing IMU signal, then use it on Navigation
+A Lab for processing IMU signal, then use it on Navigation
 
 ## Feature
 
@@ -7,7 +7,7 @@
 * [Expected] Kalman filter implementation
 
 # Hardware
-* Analog Device EVAL-ADXL325Z
+* Analog Device EVAL-ADXL325Z Accelerometer
 * Arduino DUE - ARM Cortex M3
 
 # Analysis Tool
