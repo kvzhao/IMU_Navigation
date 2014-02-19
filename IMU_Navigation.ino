@@ -1,5 +1,5 @@
 
-unsigned int a_x;
+unsigned int ax;
 int vx, vx0;
 unsigned long cur_time, prev_time;
 
@@ -24,10 +24,15 @@ void setup()
 void loop()
 {
     cur_time = millis();
-    a_x = analogRead(A0);
-    vx  = vx0 + a_x * (prev_time - cur_time);
-    Serial.println(vx);
+    ax = analogRead(A0);
 
+    // Simple integral
+    vx  = vx0 + ax * (cur_time-prev_time);
+
+    // Display the result
+    Serial.println(ax);
+
+    vx0 = vx;
     prev_time = cur_time;
 }
 
