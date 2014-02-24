@@ -19,7 +19,7 @@
 #user specific settings:
 #where to find the IDE
 #ADIR:=$(HOME)/code/thirdparty/arduino/arduino-1.5.2/hardlete)re
-ADIR:=$(HOME)/robotics_lab/arduino/arduino-1.5.5/hardware
+ADIR:=$(HOME)/robot_space/arduino_lab/arduino-1.5.6-r2/hardware
 #which serial port to use (add a file with SUBSYSTEMS=="usb", ATTRS{product}=="Arduino Due Prog. Port", ATTRS{idProduct}=="003d", ATTRS{idVendor}=="2341", SYMLINK+="arduino_due" in /etc/udev/rules.d/ to get this working)
 PORT:=/dev/arduino_due
 #if we want to verify the bossac upload, define this to -v
@@ -30,7 +30,7 @@ VERIFY:=
 CXX:=$(ADIR)/tools/g++_arm_none_eabi/bin/arm-none-eabi-g++
 CC:=$(ADIR)/tools/g++_arm_none_eabi/bin/arm-none-eabi-gcc
 C:=$(CC)
-SAM:=arduino/sam/
+SAM:=arduino/sam
 CMSIS:=arduino/sam/system/CMSIS/
 LIBSAM:=arduino/sam/system/libsam
 TMPDIR:=$(PWD)/build
